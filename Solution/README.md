@@ -45,7 +45,7 @@ $ ./insert_db.sh
 ## Mongo-express web interface
 
 
-![alt text](https://github.com/intelie/challenge-remote-access/raw/master/example%20network%20infrastructure.png "Example network infrastructure")
+![alt text](https://github.com/MTMonteiro/challenge-dev-prod/blob/main/Solution/mongo-express.png "Mongo-express")
 
 
 
