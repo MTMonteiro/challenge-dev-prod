@@ -14,7 +14,7 @@ docker exec  -ti mongo-container mongoimport -u$user_db -p$passwd_db \
 --type json --file /usr/src/code/data.json --jsonArray
 
 # Check insertion
-[ "$?" -eq "0" ] && echo "Data successfully insert !!!" || echo "Failure during insertion"
+[ "$?" -eq "0" ] && echo "Data successfully inserted !!!" || echo "Failure during insertion"
 
 # clean json file 
 echo "[]" > ./data.json
