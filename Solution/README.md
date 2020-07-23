@@ -1,5 +1,6 @@
 # Convert a CSV stream to JSONL text (solution*)
-This is the solution for challenge-dev-prod, where using python and bash the resolution of the proposed challenge was made.
+This is the solution for challenge-dev-prod, which was developed in python and bash.
+
 
 ## Requirements
  - Linux: Ubuntu 18+ recommended (can be a virtual machine).
@@ -22,11 +23,11 @@ Start the containers:
 ```bash
 $ docker-compose up 
 ```
-_use -d parameter case want run in background_.
+_use -d parameter in case you want to run in background_.
 
 ## Running
 
-Captures the csv data stream and append it at runtime to a json format file.
+Captures the csv data stream and appends it at runtime to a json format file.
 
 ```bash
 $ docker run -it --rm -v $(pwd):/usr/src/code  python-source
@@ -40,7 +41,7 @@ Transferring json file to mongodb.
 ```bash
 $ ./insert_db.sh
 ```
-*The data.json file will be cleaned to avoid duplication in the database.*
+*The data.json file will be cleaned up in order to avoid duplication in the database.*
 
 ## Mongo-express web interface
 
