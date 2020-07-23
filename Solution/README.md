@@ -29,7 +29,7 @@ Wait until the code compiles and the service shows `Listening at tcp://0.0.0.0:9
 
 Then you can test it with:
 ```bash
-nc localhost 9999
+$ nc localhost 9999
 ```
 
 ## Running
