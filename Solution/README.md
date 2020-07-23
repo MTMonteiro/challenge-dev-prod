@@ -45,8 +45,8 @@ $ ./insert_db.sh
 ## Mongo-express web interface
 
 To access an interface, simply access the address:
-http://localhost/8081/
-
+http://localhost/8081/ .
+*The collected data will be in the collect_Data table*
 ![alt text](https://github.com/MTMonteiro/challenge-dev-prod/blob/main/Solution/mongo-express.png "Mongo-express")
 
 
