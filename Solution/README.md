@@ -25,6 +25,13 @@ $ docker-compose up
 ```
 _use -d parameter in case you want to run in background_.
 
+Wait until the code compiles and the service shows `Listening at tcp://0.0.0.0:9999`
+
+Then you can test it with:
+```bash
+nc localhost 9999
+```
+
 ## Running
 
 Captures the csv data stream and appends it at runtime to a json format file.
