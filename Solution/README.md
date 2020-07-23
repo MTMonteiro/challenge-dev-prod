@@ -18,13 +18,11 @@ To compile image docker:
 $ docker build -t python-source .
 ```
 
-Wait until the code compiles and the service shows `Listening at tcp://0.0.0.0:9999`
-
-Then you can test it with:
+Start the containers:
 ```bash
 $ docker-compose up 
 ```
-user -d parameter case want run in background
+_use -d parameter case want run in background_.
 
 ## Running
 
@@ -33,10 +31,12 @@ Captures the csv data stream and append it at runtime to a json format file.
 ```bash
 $ docker run -it --rm -v $(pwd):/usr/src/code  python-source
 ```
+_to stop use ctrl + c_.
 *A data.json file will be generated in the current directory.*
 
 
 Transferring json file to mongodb.
+
 ```bash
 $ ./insert_db.sh
 ```
@@ -44,6 +44,8 @@ $ ./insert_db.sh
 
 ## Mongo-express web interface
 
+To access an interface, simply access the address:
+http://localhost/8081/
 
 ![alt text](https://github.com/MTMonteiro/challenge-dev-prod/blob/main/Solution/mongo-express.png "Mongo-express")
 
